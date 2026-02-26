@@ -26,9 +26,13 @@ public class AverageSquares {
         double tally = 0;
         int numNum = 1 + endNum - startNum;
 
-        while (startNum <= endNum) {
+        // while (startNum <= endNum) {
+            // tally += (startNum * startNum++);
+        // }
+
+        do {
             tally += (startNum * startNum++);
-        }
+        } while (startNum <= endNum);
 
         System.out.println(tally/numNum);
 
